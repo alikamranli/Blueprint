@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-12">
                 <h3 class="my-3">Add New Product</h3>
-                <form action="/admin/create" method="POST">
+                <form action="/admin//update/{{product.id}}" method="POST">
                     {{productForm.brand(class_="form-control my-3",placeholder='Product Brand')}} {{productForm.model(class_="form-control my-3",placeholder='Product Model')}} {{productForm.description(class_="form-control my-3",placeholder='Product Description')}} {{productForm.submit(class_="btn
                     btn-primary my-3",value="Add Product")}}
                 </form>
