@@ -1,0 +1,26 @@
+{% extends 'admin/layout.html' %} {%block content%}
+<!-- add product start -->
+<div class="card">
+    <div class="card-body ">
+        <h5 class="card-title ">Add new product</h5>
+        <p class='card-text'>
+            <form action="/admin/products" method="POST">
+                {{productForm.brand(class_='form-control my-3',placeholder="Product Brand")}} {{productForm.model(class_='form-control my-3',placeholder="Product Model")}} {{productForm.description(class_='form-control my-3',placeholder="Product Description")}} {{productForm.submit(class_='btn
+                btn-primary my3',value="Add product")}}
+            </form>
+        </p>
+
+
+    </div>
+</div>
+<!-- add product end -->
+<!--  product list start -->
+<div class=" card ">
+    <div class="card-body ">
+        <h5 class="card-title ">Product list</h5>
+        <p class="card-text ">Add product list data</p>
+
+    </div>
+</div>
+<!--  product list end -->
+{% endblock %}
